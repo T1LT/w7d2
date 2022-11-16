@@ -6,4 +6,8 @@ Rails.application.routes.draw do
 
   resources :users, only: %i(create new show)
   resource :session, only: %i(create new destroy) 
+  resources :bands do
+    resources :albums, only: %i(new)
+  end
+  resources :albums, except: %i(new index)
 end

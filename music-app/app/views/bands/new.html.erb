@@ -1,0 +1,8 @@
+<div class="form-parent">
+    <h2>Create a Band!</h2>
+    <form action="<%= bands_url %>" method="post">
+        <%= auth_token %>
+        <input type="text" name="band[name]" placeholder="Band Name">
+        <center><input type="submit" value="Create" class="form-submit"></center>
+    </form>
+</div>

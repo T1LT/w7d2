@@ -75,3 +75,15 @@
   align-items: center;
   height: 100vh;
  }
+
+ .form-parent > form input[type="submit"] {
+  margin-top: 20px;
+ }
+
+ .bands {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ }
